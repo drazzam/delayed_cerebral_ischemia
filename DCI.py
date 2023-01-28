@@ -54,7 +54,8 @@ user_input = pd.DataFrame(
 'size_mm': size_mm,
 'tx': tx,
 'mrs_discharge': mrs_discharge,
-'infarct': infarct
+'infarct': infarct,
+'monocytes': monocytes
 }, index=[0])
 
 # Use the model to make a prediction
