@@ -38,7 +38,6 @@ size_mm = st.number_input("Enter size of aneurysm in mm", min_value=0, max_value
 tx = st.selectbox("Treatment modality", ["Microsurgical Clipping", "Endovascular Coiling"])
 tx = 1 if tx == "Microsurgical Clipping" else 2
 mrs_discharge = st.number_input("Enter mrs at discharge", min_value=0, max_value=5, value=2)
-last_mrs = st.number_input("Enter last modified rankin scale", min_value=0, max_value=5, value=2)
 infarct = st.selectbox("Cerebral infarction", ["Yes", "No"])
 infarct = 1 if infarct == "Yes" else 0
 monocytes = st.number_input("Enter monocyte count in 10^3/uL: ")
