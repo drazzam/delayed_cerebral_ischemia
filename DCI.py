@@ -35,7 +35,7 @@ bmi = st.number_input("Enter the value for BMI: ")
 hunt_and_hess = st.number_input("Enter the value for Hunt and Hess Scale score: ")
 modified_fisher = st.number_input("Enter the value for Modified Fisher Scale score: ")
 
-hypertension = st.selectbox("Enter the value for Hypertension", ["0 for No", "1 for Yes"])
+hypertension = st.selectbox("Enter the value for Hypertension", ["No", "Yes"])
 if hypertension == "0 for No":
     hypertension = 0
 else:
