@@ -74,7 +74,9 @@ if st.button("Predict"):
     prediction = clf.predict(new_data)
     prediction_proba = clf.predict_proba(new_data)
  
+    # Get the prediction probability
+    prediction = int(prediction)
+    probability = prediction_proba[0,prediction].item()
 
     # Print the prediction probability as a percentage
     st.write("The Probability of Developing Delayed Cerebral Ischemia: ", prediction*100, "%")
-
