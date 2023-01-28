@@ -60,10 +60,10 @@ if st.button("Predict"):
  'monocytes': monocytes
  }, index=[0])
 
-# Use the model to make a prediction
-prediction = model.predict(user_input)
+ # Use the model to make a prediction
+ prediction = model.predict(user_input)
 
-#Show the prediction
-st.write("The Probability of Developing Delayed Cerebral Ischemia Is: ", (prediction[0]*100),"%")
+ #Show the prediction
+ st.write("The Probability of Developing Delayed Cerebral Ischemia Is: ", (prediction[0]*100),"%")
 
 
