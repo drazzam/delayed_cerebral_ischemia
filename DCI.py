@@ -79,5 +79,5 @@ if st.button("Predict"):
     probability = prediction_proba[0,prediction].item()
 
     # Print the prediction probability as a percentage
-    st.write("The Probability of Developing Delayed Cerebral Ischemia: ", probability*100, "%")
+    st.write("The Probability of Developing Delayed Cerebral Ischemia: ", prediction*100, "%")
 
