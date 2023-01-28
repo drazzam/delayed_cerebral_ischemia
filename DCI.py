@@ -24,45 +24,45 @@ clf = RandomForestClassifier()
 clf.fit(X_train, y_train)
 
 # Let the user enter values for the variables
-sex = st.selectbox("Select the value for Sex", ["Male", "Female"])
+sex = st.selectbox("Select The Gender:", ["Male", "Female"])
 if sex == "Male":
     sex = 0
 else:
     sex = 1
 
-age = st.number_input("Enter the value for Age: ")
-bmi = st.number_input("Enter the value for BMI: ")
-hunt_and_hess = st.number_input("Enter the value for Hunt and Hess Scale score: ")
-modified_fisher = st.number_input("Enter the value for Modified Fisher Scale score: ")
+age = st.number_input("Enter The Age: ")
+bmi = st.number_input("Enter The Body Mass Index: ")
+hunt_and_hess = st.number_input("Enter The Hunt and Hess Scale score: ")
+modified_fisher = st.number_input("Enter The Modified Fisher Scale score: ")
 
-hypertension = st.selectbox("Enter the value for Hypertension", ["No", "Yes"])
+hypertension = st.selectbox("Is The Patient Hypertensive?", ["No", "Yes"])
 if hypertension == "No":
     hypertension = 0
 else:
     hypertension = 1
 
-smoking = st.selectbox("Enter the value for Smoking", ["No", "Yes"])
+smoking = st.selectbox("Does The Patient Smoke?", ["No", "Yes"])
 if smoking == "No":
     smoking = 0
 else:
     smoking = 1
 
-size_of_aneurysm = st.number_input("Enter the value for Size of Aneurysm in mm: ")
+size_of_aneurysm = st.number_input("Enter The Size of the Aneurysm in mm: ")
 treatment_modality = st.selectbox("Enter the value for Treatment Modality", ["Microsurgical Clipping", "Endovascular Coiling"])
 if treatment_modality == "Microsurgical Clipping":
     treatment_modality = 1
 else:
     treatment_modality = 2
 
-mrs_at_discharge = st.number_input("Enter the value for mRS score at discharge: ")
+mrs_at_discharge = st.number_input("Enter The mRS score at Discharge: ")
 
-cerebral_infarction = st.selectbox("Enter the value for Cerebral Infarction", ["No", "Yes"])
+cerebral_infarction = st.selectbox("Did The Patient Get Cerebral Infarction?", ["No", "Yes"])
 if cerebral_infarction == "No":
     cerebral_infarction = 0
 else:
     cerebral_infarction = 1
 
-monocyte_value = st.number_input("Enter the value for Monocyte laboratory value (10^3/uL): ")
+monocyte_value = st.number_input("Enter The Value For Monocyte (10^3/uL): ")
 
 if st.button("Predict"):
     # Create a new data point using the user-entered values
