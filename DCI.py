@@ -68,8 +68,4 @@ st.write("The Probability of Developing Delayed Cerebral Ischemia Is: ", (predic
 if st.button("Predict again"):
  pass
 
-# Run the Streamlit app
-if name == "main":
- st.run()
-
 
